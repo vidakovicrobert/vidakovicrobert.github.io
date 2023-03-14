@@ -69,21 +69,21 @@ li {
     line-height: 2;
 }
 
-@media (max-width: 600px) {
-    .contact-form label {
-        font-size: 1.2em;
+@media only screen and (max-width: 768px) {
+
+    /* Increase font size and padding of navbar links */
+    .navbar a {
+        font-size: 1.5em;
+        padding: 0.5em;
     }
 
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
-        font-size: 1.2em;
-        padding: 10px;
-    }
-
+    /* Increase font size and padding of form elements */
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
     .contact-form input[type="submit"] {
-        font-size: 1.2em;
-        padding: 10px 20px;
+        font-size: 1.5em;
+        padding: 0.5em;
     }
 }
 
@@ -148,21 +148,6 @@ li {
 .navbar a:hover {
     background-color: #fff;
     color: #333;
-}
-
-@media only screen and (max-width: 600px) {
-    nav a {
-        font-size: 16px;
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .gallery {
