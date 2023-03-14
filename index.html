@@ -1,15 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Vidaković</title>
+    <title>Osobna stranica - Robert Vidaković</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Robert Vidaković</h1>
+    <nav class="navbar navbar-fixed">
+        <a href="#about">About me</a>
+        <a href="#hobbies">My hobbies</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1 id="about">Osobna web stranica</h1>
+        <h2>Robert Vidaković</h2>
+        <br>
+        <br>
+        <div id="about" class="section">
+            <h2>About me</h2>
+            <p>As a technology enthusiast, Robert is currently pursuing a degree at the Faculty of Informatics in Pula.
+                While also having graduated from high school as a technician for logistics and forwarding. With his
+                combined knowledge of technology and logistics, he is well-equipped to tackle complex problems and find
+                innovative solutions to daily tasks given at and for the classes' assignments.
+                <br>
+                <br>
+                In his free time, he enjoys relaxing by playing video games, finding it to be a great way to unwind and
+                challenge his problem-solving skills. As a casual photographer, he uses his camera to capture moments
+                that inspire and explore the beauty of nature.
+            </p>
+        </div>
+
+        <div id="hobbies" class="section">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>Photography</li>
+                <li>Playing video games</li>
+                <li>Sports</li>
+            </ul>
+        </div>
+
+        <div id="gallery" class="gallery">
+            <a href="A Storm is Coming.jpeg">
+                <img src="images/A Storm is Coming.jpeg" alt="A Storm is Coming.jpeg">
+            </a>
+            <a href="Decisive Moment.jpg">
+                <img src="images/Decisive Moment.jpg" alt="Decisive Moment.jpg">
+            </a>
+            <a href="Minimalist Landscape.jpeg">
+                <img src="images/Minimalist Landscape.jpeg" alt="Minimalist Landscape.jpeg">
+            </a>
+            <a href="Sunset.jpeg">
+                <img src="images/Sunset.jpeg" alt="Sunset.jpeg">
+            </a><a href="Symmetry.jpeg">
+                <img src="images/Symmetry.jpeg" alt="Symmetry.jpeg">
+            </a><a href="Urbex.jpg">
+                <img src="images/Urbex.jpg" alt="Urbex.jpg">
+            </a><a href="C2020F3.JPG">
+                <img src="images/C2020F3.JPG" alt="C2020F3.JPG">
+            </a><a href="Cat.jpg">
+                <img src="images/Cat.jpg" alt="Cat.jpg">
+            </a><a href="Cat1.jpg">
+                <img src="images/Cat1.jpg" alt="Cat1.jpg">
+            </a><a href="Dog.jpg">
+                <img src="images/Dog.jpg" alt="Dog.jpg">
+            </a>
+        </div>
+
+
+        <div id="contact" class="section">
+            <h2>Contact me</h2>
+            <form class="contact-form" action="submit-form.php" method="post">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+        <div id="ee" class="ee">
+            <a href="qr-code.png">
+                <img src="images/qr-code.png" alt="qr-code.png">
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
