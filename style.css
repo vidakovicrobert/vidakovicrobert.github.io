@@ -69,6 +69,24 @@ li {
     line-height: 2;
 }
 
+@media (max-width: 600px) {
+    .contact-form label {
+        font-size: 1.2em;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+}
+
 .contact-form {
     background-color: rgba(183, 183, 183, 0.8);
     padding: 20px;
@@ -130,6 +148,13 @@ li {
 .navbar a:hover {
     background-color: #fff;
     color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
