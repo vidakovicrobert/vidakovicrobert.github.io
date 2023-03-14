@@ -66,7 +66,7 @@ li {
 .section p {
     margin-top: 10px;
     text-align: justify;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 @media only screen and (max-width: 768px) {
